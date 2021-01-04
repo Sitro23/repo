@@ -1,0 +1,1 @@
+Projekt Bazy danych bibloteki przechowujący dane o pracownikach, wypożyczonych książkach itp. 
