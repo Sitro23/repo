@@ -48,3 +48,15 @@ CREATE VIEW kwerenda10 AS
 Select Pracownicy.login, Pracownicy.haslo, Pracownicy.id_rola, Role.nazwa, Role.id_rola
 FROM Pracownicy INNER JOIN Role
 ON Pracownicy.id_rola = Role.id_rola
+
+-- kwerenda1: Kwerenda wybiera wszystkie pola z tabeli Kategorie gdzie nazwa to "Akcja,Romans lub Poradnik"
+-- kwerenda2: Kwerenda wybiera wszystkie pola z tabeli Ksiazki gdzie rok wydania znajduje się pomiędzy 2017 a 2019 rokem.
+-- kwerenda3: Kwerenda wybiera id_czytelnik,login oraz telefon z tabeli czytelnicy oraz wyświetla id_czyelnika malejąco a telefon rosnąco
+-- kwerenda4: Kwerenda wybiera wszystkie pola z tabeli wypozyczenia maksymalnie 2 do 3 pól 
+-- kwerenda5: Kwerenda sprawdza minimalny oraz maksymalny rok urodzenia z tabeli czytelnicy
+-- kwerenda6: Kwerenda sprawdza ile jest danych książek z tabeli Ksiazki i grupuje je według id_ksiazka
+-- kwerenda7: Kwerenda sprawdza ile jest danych tytyułów z tabeli ksiązki, wyśietla tylko te które mają rok wydania mniejszy bądz równy roku 2020, grupuje je według roku_wydania oraz wyśietla malejącą Liczbe modeli
+-- kwerenda8: Kwerenda wybiera tytul,rok_wydania,id_autor z tabeli autorzy oraz imie,nazwisko,id_autor z tabeli ksiazki lewo stronie, gdzie Ksiazki.id_autor = Autorzy.id_autor oraz rok wydania ksiazki to 2019 rok
+-- kwerenda9: Kwerenda wybiera id_czytelnik,login,email,telefon z tabeli czytelnicy oraz id_czytelnik,data_wypozyczenia,data_oddania z tabeli wypozyczenia gdzie Ksiazki.id_autor = Autorzy.id_autor oraz wyświetla login,emial,data_wypozyczenia malejąco a data_odadania rosnąco
+-- kwerenda10: Kwerenda wybiera Login,haslo,id_rola z tabeli Pracownicy oraz nazwa i id_rola z tabeli Role gdzie Pracownicy.id_rola = Role.id_rola
+
